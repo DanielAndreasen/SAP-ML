@@ -21,9 +21,9 @@ except ImportError:
 import argparse
 
 linelists = glob('linelist/*.moog')
-linelists = map(lambda x: x[9:], linelists)
+linelists = list(map(lambda x: x[9:], linelists))
 wavelengths = pd.read_csv('linelist.lst', delimiter=r'\s+', usecols=('WL',))
-wavelengths = map(lambda x: round(x[0], 2), wavelengths.values)
+wavelengths = list(map(lambda x: round(x[0], 2), wavelengths.values))
 wavelengths += ['teff', 'logg', 'feh', 'vt']
 
 
