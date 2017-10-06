@@ -14,7 +14,7 @@ try:
     sklearn_import = True
 except ImportError:
     sklearn_import = False
-    print 'Install scikit-learn with: pip install sklearn'
+    print('Install scikit-learn with: pip install sklearn')
 import argparse
 
 linelists = glob('linelist/*.moog')
@@ -102,7 +102,7 @@ def train(clf, save=True, plot=True):
         fnames = {star: find_star(star) for star in df.index}
         N = len(fnames)
         for i, (star, fname) in enumerate(fnames.iteritems()):
-            print '{}/{}'.format(i+1, N)
+            print('{}/{}'.format(i+1, N))
             df_sub = read_star(fname)
             df_combined = add_parameters(df_combined, df, star)
             df_combined = merge_linelist(df_combined, df_sub, star)
@@ -125,12 +125,12 @@ def train(clf, save=True, plot=True):
     y_pred = clf.predict(X_test)
     t = time()-t
     speedup = 60*N/t
-    print 'Calculated parameters for {} stars in {:.2f}ms'.format(N, t*1e3)
-    print 'Speedup: {} million times'.format(int(speedup/1e6))
+    print('Calculated parameters for {} stars in {:.2f}ms'.format(N, t*1e3))
+    print('Speedup: {} million times'.format(int(speedup/1e6)))
 
     for i, label in enumerate(ylabel):
         score = mean_absolute_error(y_test[label], y_pred[:, i])
-        print 'Mean absolute error for {}: {:.2f}'.format(label, score)
+        print('Mean absolute error for {}: {:.2f}'.format(label, score))
         if plot:
             plt.figure()
             plt.plot(y_test[label], y_test[label].values - y_pred[:, i], 'o')
