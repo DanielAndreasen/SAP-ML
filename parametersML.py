@@ -5,7 +5,10 @@ import pandas as pd
 from time import time
 from glob import glob
 import matplotlib.pyplot as plt
-import cPickle
+try:
+    import cPickle
+except ImportError:
+    import _pickle as cPickle
 try:
     from sklearn.model_selection import train_test_split
     from sklearn.linear_model import LinearRegression, Ridge
