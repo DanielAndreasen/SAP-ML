@@ -23,6 +23,9 @@ last column. The input file is read with [`np.loadtxt`](https://docs.scipy.org/d
 Note that there can be other columns, however the first and last have to be
 wavelength and EW, respectively.
 
+This is useable in the optical and tested on nearly 600 FGK dwarf stars. The
+wavelengths can be seen in the file called `linelist.lst`.
+
 ## Get parameters
 
 ```
