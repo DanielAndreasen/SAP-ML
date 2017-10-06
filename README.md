@@ -1,7 +1,7 @@
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/DanielAndreasen)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square)](https://saythanks.io/to/DanielAndreasen)
 
-[![Updates](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/shield.svg)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
-[![Python 3](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/python-3-shield.svg)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
+[![Updates](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/shield.svg?style=flat-square)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
+[![Python 3](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/python-3-shield.svg?style=flat-square)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
 
 # SAP-ML
 Stellar Atmospheric Parameters - Machine Learning.
