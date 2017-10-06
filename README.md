@@ -1,5 +1,6 @@
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square)](https://saythanks.io/to/DanielAndreasen)
 
+[![Build Status](https://travis-ci.org/DanielAndreasen/SAP-ML.svg?branch=master)](https://travis-ci.org/DanielAndreasen/SAP-ML)
 [![Updates](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/shield.svg?style=flat-square)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
 [![Python 3](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/python-3-shield.svg?style=flat-square)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
 
