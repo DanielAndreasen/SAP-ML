@@ -1,6 +1,8 @@
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat-square)](https://saythanks.io/to/DanielAndreasen)
 
 [![Build Status](https://travis-ci.org/DanielAndreasen/SAP-ML.svg?branch=master)](https://travis-ci.org/DanielAndreasen/SAP-ML)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/da52b2a1511a4226a810d82a3fcee346)](https://www.codacy.com/app/daniel.andreasen/SWEETer-Cat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DanielAndreasen/SWEETer-Cat&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/da52b2a1511a4226a810d82a3fcee346)](https://www.codacy.com/app/daniel.andreasen/SWEETer-Cat?utm_source=github.com&utm_medium=referral&utm_content=DanielAndreasen/SWEETer-Cat&utm_campaign=Badge_Coverage)
 [![Updates](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/shield.svg?style=flat-square)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
 [![Python 3](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/python-3-shield.svg?style=flat-square)](https://pyup.io/repos/github/DanielAndreasen/SAP-ML/)
 
