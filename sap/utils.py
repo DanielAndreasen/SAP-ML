@@ -30,8 +30,7 @@ def find_star(star):
         fname = '{}{}.moog'.format(star, affix)
         if fname in linelists:
             return 'linelist/{}'.format(fname)
-    else:
-        raise IOError('{} not found'.format(star))
+    raise IOError('{} not found'.format(star))
 
 
 def read_star(fname):
