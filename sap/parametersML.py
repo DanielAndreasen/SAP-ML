@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression, Ridge
 try:
     import cPickle
 except ImportError:
@@ -48,7 +47,6 @@ def _parser():
 
 
 def train(clf, save=True, plot=True):
-    print(clf)
     if not os.path.isfile('combined.csv'):
         df_combined = create_combined()
     else:
@@ -96,7 +94,7 @@ if __name__ == '__main__':
             clf = linear_model.LinearRegression()
         elif args.classifier == 'ridge':
             clf = linear_model.RidgeCV(alphas=[100.0, 0.01, 0.1, 1.0, 10.0])
-        else:
+        elif args.classifier == 'lasso':
             clf = linear_model.LassoLars(alpha=0.001)
         clf = train(clf, save=args.save, plot=args.plot)
     else:
