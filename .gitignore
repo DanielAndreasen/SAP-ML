@@ -1,3 +1,5 @@
 *.pyc
-linelist
+sap/linelist
 venv
+
+!sap/linelist/HD16008_rv.moog
