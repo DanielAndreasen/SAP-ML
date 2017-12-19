@@ -46,7 +46,11 @@ def _parser():
     parser.add_argument('--plot',
                         help='Plot the results from training a new model',
                         default=False, action='store_true')
-    return parser.parse_args()
+    args = parser.parse_args()
+    if not args.spectrum and not args.linelist and not args.train:
+        print(parser.print_help())
+        raise SystemExit
+    return args
 
 
 def find_star(star):
@@ -148,6 +152,7 @@ def train(clf, save=True, plot=True):
 
 if __name__ == '__main__':
     args = _parser()
+
     if args.train and not sklearn_import:
         print('Not possible to train without scikit-learn installed.')
         print('Will use pre-trained model')
@@ -164,10 +169,6 @@ if __name__ == '__main__':
     else:
         with open('FASMA_ML.pkl', 'rb') as f:
             clf = cPickle.load(f)
-
-    if not args.spectrum and not args.linelist:
-        print('No input (spectrum/line list) provided...')
-        raise SystemExit('Bye bye...')
 
     if args.spectrum:
         raise SystemExit('Please run ARES yourself. This is difficult enough')
