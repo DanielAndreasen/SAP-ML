@@ -28,7 +28,15 @@ install:
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION
   - source activate test-environment
   - travis_retry pip install -r requirements.txt
+  - travis_retry pip install -r test_requirements.txt
+
+before_script:
+  - cd sap
 
 script:
-  - python parametersML.py -h
-  # - pytest --cov=. --cov-report term-missing --durations 5
+  - python -m pytest --cov=. --cov-report term-missing --durations 5
+
+after_success:
+  - coveralls -i
+  - coverage xml -i
+  - python-codacy-coverage -r coverage.xml

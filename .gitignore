@@ -3,3 +3,7 @@ sap/linelist
 venv
 
 !sap/linelist/HD16008_rv.moog
+
+# Tests
+sap/.cache
+sap/.coverage
