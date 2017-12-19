@@ -22,7 +22,6 @@ def test_read_star():
 
     assert df.shape[0] > 100
     assert df.shape[1] == 2
-    assert type(df) ==  pd.DataFrame
     assert isinstance(df, pd.DataFrame)
     assert df.columns[0] == 'wavelength'
     assert df.columns[1] == 'EW'
